@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 
 
 describe(`Компонент Button`, () => {
-  it('должен рендериться без ошибок', function () {
+  test('должен рендериться без ошибок', function () {
     shallow(<Button>test</Button>);
   });
 
@@ -15,13 +15,13 @@ describe(`Компонент Button`, () => {
   });
 
   presetList.forEach(presetName=>{
-    it(`должен поддерживать пресет ${presetName}` , () => {
+    test(`должен поддерживать пресет ${presetName}` , () => {
       const preset = shallow(<Button {...{[presetName]:true}}>test</Button>);
       expect(preset.is(`.${presetName}`)).toBe(true);
     });
   })
 
-  it(`должен передавать className` , () => {
+  test(`должен передавать className` , () => {
     const test = shallow(<Button className={`test`}>test</Button>);
     expect(test.is(`.test`)).toBe(true);
   });

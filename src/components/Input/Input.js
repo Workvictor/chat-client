@@ -14,7 +14,9 @@ export class Input extends React.Component {
   }
 
   onUserInput = ({ value }) => {
+    const { onChange } = this.props;
     this.onValueReceive({ value });
+    onChange && onChange({ value });
   }
 
   onValueReceive = ({ value }) => {
