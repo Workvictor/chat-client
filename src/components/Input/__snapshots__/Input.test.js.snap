@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Компонент Input должен соответствовать снимку 1`] = `
+<Input
+  value="test"
+>
+  <styled.input
+    onChange={[Function]}
+    value="test"
+  >
+    <input
+      className="sc-bdVaJa bxeEtt"
+      onChange={[Function]}
+      value="test"
+    />
+  </styled.input>
+</Input>
+`;
