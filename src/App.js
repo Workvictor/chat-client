@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
-import { Button, Input } from './components';
+import { Provider }         from 'react-redux';
+import { store }            from './store';
+import {
+  Button,
+  Input,
+  Main
+}                           from './components';
 
-class App extends Component {
-  render() {
+
+class App extends Component{
+  render(){
     return (
-      <div>
-        <Input/>
-        <Button primary>Hello</Button>
-      </div>
+      <Provider store={store}>
+        <Main>
+          <Input/>
+          <Button primary>Hello</Button>
+        </Main>
+      </Provider>
     );
   }
 }
