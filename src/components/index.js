@@ -1,3 +1,7 @@
 export { Input }  from './Input';
 export { Button } from './Button';
-export { Main }   from './Main';
+export {
+  MainLayout,
+  Wrapper
+}                 from './Layout';
+export { Body }   from './Body';

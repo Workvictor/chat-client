@@ -4,7 +4,9 @@ import { store }            from './store';
 import {
   Button,
   Input,
-  Main
+  MainLayout,
+  Wrapper,
+  Body
 }                           from './components';
 
 
@@ -12,10 +14,13 @@ class App extends Component{
   render(){
     return (
       <Provider store={store}>
-        <Main>
-          <Input/>
-          <Button primary>Hello</Button>
-        </Main>
+        <MainLayout>
+          <Wrapper>
+            <Body/>
+            <Input/>
+            <Button primary>send</Button>
+          </Wrapper>
+        </MainLayout>
       </Provider>
     );
   }
