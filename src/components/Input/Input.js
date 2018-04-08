@@ -2,10 +2,11 @@ import React  from 'react';
 import styled from 'styled-components';
 
 
-const Wrapper=styled.input`
+const Wrapper=styled.textarea`
   background: #fff;
   color: #333;
   border: 1px solid #999;
+  resize: none;
 `;
 
 export class Input extends React.Component{
@@ -33,9 +34,15 @@ export class Input extends React.Component{
   }
 
   render(){
+    const { className }=this.props;
     const { value }=this.state;
     return (
-      <Wrapper value={value} onChange={this.onUserInput}/>
+      <Wrapper
+        className={className}
+        value={value}
+        onChange={this.onUserInput}
+        rows={3}
+      />
     );
   }
 }

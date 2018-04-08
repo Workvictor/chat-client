@@ -5,7 +5,7 @@ const onlineStatus=[
 
 const initialState={
   id: null,
-  name: null,
+  name: `Витек`,
   online: onlineStatus[0],
 };
 

@@ -1,26 +1,38 @@
 import React, { Component } from 'react';
 import { Provider }         from 'react-redux';
+import styled               from 'styled-components';
 import { store }            from './store';
 import {
-  Button,
-  Input,
   MainLayout,
   Wrapper,
-  Body
+  Flex,
+  SideBarLayout,
+  ContentLayout,
+  Body,
+  SideBar
 }                           from './components';
 
+
+const MainWrapper=styled(MainLayout)`
+  background-color: #a0a0a0;
+`;
 
 class App extends Component{
   render(){
     return (
       <Provider store={store}>
-        <MainLayout>
+        <MainWrapper>
           <Wrapper>
-            <Body/>
-            <Input/>
-            <Button primary>send</Button>
+            <Flex>
+              <SideBarLayout>
+                <SideBar/>
+              </SideBarLayout>
+              <ContentLayout>
+                <Body/>
+              </ContentLayout>
+            </Flex>
           </Wrapper>
-        </MainLayout>
+        </MainWrapper>
       </Provider>
     );
   }
