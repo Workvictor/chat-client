@@ -2,6 +2,7 @@
   "name": "chat-client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://victorpunko.ru/development/chat-client",
   "dependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -9,6 +10,7 @@
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "react-test-renderer": "^16.3.1",
     "redux": "^3.7.2",

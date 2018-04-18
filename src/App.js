@@ -17,12 +17,18 @@ const MainWrapper=styled(MainLayout)`
   background-color: #a0a0a0;
 `;
 
-class App extends Component{
+export class App extends Component{
   render(){
     return (
       <Provider store={store}>
         <MainWrapper>
           <Wrapper>
+              {/*<Switch>*/}
+                {/*<Route exact path={`/`} component={Home}/>*/}
+                {/*<Route path={`/login`} component={Login}/>*/}
+                {/*<Route path="/:user" component={User}/>*/}
+                {/*<Route component={NoMatch}/>*/}
+              {/*</Switch>*/}
             <Flex>
               <SideBarLayout>
                 <SideBar/>
@@ -37,5 +43,3 @@ class App extends Component{
     );
   }
 }
-
-export default App;
