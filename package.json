@@ -35,5 +35,8 @@
       "!**/index.js",
       "!**/registerServiceWorker.js"
     ]
+  },
+  "devDependencies": {
+    "flow-bin": "^0.70.0"
   }
 }
