@@ -7,6 +7,7 @@ import {
 }                  from './Layout';
 import { Home }    from './Home';
 import { Body }    from './Body';
+import { Chats }    from './Chats';
 import { Input }   from './Input';
 import { Button }  from './Button';
 import { SideBar } from './SideBar';
@@ -20,6 +21,7 @@ export {
   SideBarLayout,
   Home,
   Body,
+  Chats,
   Input,
   Button,
   SideBar,

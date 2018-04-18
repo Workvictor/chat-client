@@ -15,6 +15,7 @@ import {
   ContentLayout,
   Home,
   Body,
+  Chats,
   SideBar,
 }                           from './components';
 import { routes }           from './const';
@@ -33,18 +34,11 @@ export class App extends Component{
             <Wrapper>
               <Switch>
                 <Route exact path={routes.root} component={Home}/>
+                <Route exact path={routes.chats} component={Chats}/>
                 {/*<Route path={`/login`} component={Login}/>*/}
                 {/*<Route path="/:user" component={User}/>*/}
                 {/*<Route component={NoMatch}/>*/}
               </Switch>
-              <Flex>
-                <SideBarLayout>
-                  <SideBar/>
-                </SideBarLayout>
-                <ContentLayout>
-                  <Body/>
-                </ContentLayout>
-              </Flex>
             </Wrapper>
           </MainWrapper>
         </BrowserRouter>
