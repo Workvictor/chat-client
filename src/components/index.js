@@ -1,11 +1,26 @@
-export { Input }   from './Input';
-export { Button }  from './Button';
-export {
-  MainLayout,
-  Wrapper,
+import {
   Flex,
+  Wrapper,
+  MainLayout,
+  ContentLayout,
   SideBarLayout,
-  ContentLayout
 }                  from './Layout';
-export { Body }    from './Body';
-export { SideBar } from './SideBar';
+import { Home }    from './Home';
+import { Body }    from './Body';
+import { Input }   from './Input';
+import { Button }  from './Button';
+import { SideBar } from './SideBar';
+
+
+export {
+  Flex,
+  Wrapper,
+  MainLayout,
+  ContentLayout,
+  SideBarLayout,
+  Home,
+  Body,
+  Input,
+  Button,
+  SideBar,
+};
